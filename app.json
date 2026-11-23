@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Captain English",
+    "slug": "captain-english",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0c1812",
+    "android": {
+      "package": "com.captainenglish.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1d6b45"
+      },
+      "permissions": ["RECORD_AUDIO"]
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "التطبيق يحتاج الميكروفون عشان تقدر ترد بصوتك.",
+          "speechRecognitionPermission": "التطبيق يحتاج التعرف على الكلام عشان يقيّم نطقك.",
+          "androidSpeechServicePackages": ["com.google.android.googlequicksearchbox"]
+        }
+      ]
+    ]
+  }
+}
